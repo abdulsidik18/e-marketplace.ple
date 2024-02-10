@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Admin Login">
+    <title>E-COMMERCE | Tanaman Florikultura</title>
+     <link href='img/icons/favicon.ico' rel='shortcut icon'>
+     <AUDIO autoplay>
+    <source src="MP3/1.mp3" type="AUDIO/mp3" />
+  </AUDIO>
+
+  <!-- Bootstrap core CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="assets/css1/coming-soon.min.css" rel="stylesheet">
+  <!--<link rel="stylesheet" href="assets/dist/css/style.css">-->
+
+</head>
+
+<body>
+  <div id="loading"></div>
+   <div class="autoplay"></div>
+    <div class="masthead">
+      <div class="masthead-bg"></div>
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-12 my-auto">
+            <div class="masthead-content text-white py-5 py-md-0">
+              <h1 class="mb-3">Pelanggan Kantor Pulau</h1>
+               </br>
+                 <form action="proseslogincust.php" method="post">
+              <div class="form-group">
+                <input class="form-control" placeholder="Username..." name="username" type="text" autofocus id="username" aria-describedby="basic-addon">
+              </div>
+              <div class="form-group">
+                <input class="form-control" placeholder="Password..." name="password" type="password" value="" aria-describedby="basic-addon">
+              </div>
+              <div class="col-xs-14">
+              <button type="submit" class="btn btn-primary btn-block btn-flat">Masuk</button>
+               <p>belum punya akun.? silahkan <a href="index3.php"></b>Daftar</b></p></h5>
+                <marquee class="text-white">Selamat Datang Di E-Commerce Tanaman Florikultura, yang belum punya Akun Silahkan Registrasi Terlebih Dahulu.</marquee>
+                </div>
+              </div>
+
+               <!-- <p>belum punya akun.? silahkan <a href="index3.php"></b>Daftar</b></p></h5> -->
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+          
+     <!-- Modal Dialog Contact -->
+<!--  <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Kontak</h4>
+         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body">
+      Bila anda membutuhkan Bantuan, silahkan hubungi saya di :
+     <table>
+      <tr>
+      <td>No Telepon/WA</td> <td>:</td> <td>0853 484 190 13</td>
+      </tr>
+      <br />
+      <tr>
+      <td>E-mail</td><td>:</td> <td><a href="http://www.abdulsidik011997@gmail.com">www.abdulsidik011997@gmail.com</a></td>
+      </tr> 
+      <br />
+      <tr>
+      <td>Blog</td>       <td>:</td> <td><a href="http://www.abdulsidik01.blogspot.com" target="_blank">www.abdulsidik01.blogspot.com</a></td>
+      </tr>
+      <br />
+       </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+<!-- end dialog modal -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  
+       
+
+      <!-- Bootstrap core JavaScript -->
+      <script src="assets/vendor/jquery/jquery.min.js"></script>
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+     
+    <!-- Plugin JavaScript -->
+    <script src="assets/vendor/vide/jquery.vide.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="assets/js1/coming-soon.min.js"></script>
+    <script> var loading = document.getElementById('loading');
+
+    window.addEventListener('load',function(){
+      loading.style.display="none";
+    });
+    </script>
+
+
+    <style type="text/css">
+  .gelembung{
+    position: absolute;
+    top: 0;
+    border: 2px solid #888;
+    border-radius: 50%;
+    z-index: 10;
+  }
+</style>
+<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+  $('document').ready(function(){
+    var top;
+    
+    $(window).mousemove(function(e){
+        var mouseX = e.pageX;
+        var mouseY = e.pageY;
+        var width = Math.random() * 25 + 5;
+        var height =  width;
+          
+          $('<div class="gelembung"></div>').appendTo('body')
+            .css({'left': mouseX, 'top': mouseY, 'width': width, 'height': height});
+    
+          
+          $('.gelembung').each(function(){            
+            top = parseInt($(this).css('top'));
+            $(this).animate({'top': top - (Math.random() * 200 + 50)},Math.random()* 600 + 400,function(){
+              $(this).remove();
+            });
+          });       
+    });
+  });
+</script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,44 @@
+<style type="text/css">
+		.galeri{
+			list-style: none;
+		}
+		.galeri img{
+			background: #fff;
+			padding: 5px;
+			margin: 5px;
+			border: 1px solid #ccc;
+			cursor: pointer;
+			width: 100px;
+			height: 80px;
+			float: left;
+		}
+		.zoom{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 500px;
+			height: 400px;
+			z-index: 5;
+			margin-left: -250px;
+			margin-top: -230px;
+			padding: 10px 10px 50px 10px;
+			border: 1px solid #aaa;
+			box-shadow: 0 0 5px #ccc;
+			background: #fff;
+		}
+		.zoom img{
+			width: 500px;
+			height: 400px;
+		}
+		.zoom p{
+			font-size: 18px;
+			font-weight: bold;
+			margin-top: 10px;
+		}
+		.zoom .close{
+			position: absolute;
+			right: 20px;
+			bottom: 10px;
+			cursor: pointer;
+		}
+	</style>

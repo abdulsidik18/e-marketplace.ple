@@ -1,0 +1,97 @@
+ <style>
+     td{padding: 20px 0;}
+
+     /*rounded image*/
+     .img1{
+        border-radius: 10px;
+     }
+
+     /*circled image*/
+     .img2{
+        border-radius: 50%;
+     }
+
+     /*thumbnail*/
+     .img3, .img4{
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 150px;
+     }
+
+     /*link image*/
+     .img4:hover {
+        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+     }
+
+     /*Polaroid*/
+    div.polaroid {
+        width: 200px;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .img5 {width: 100%}
+
+    div.container {
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    /*opacity img*/
+    .img6{
+      opacity: 0.5;
+      filter: alpha(opacity=50);
+    }
+    
+    /*filter*/
+    .blur { filter: blur(4px); }
+    .brightness { filter: brightness(250%); }
+    .contrast { filter: contrast(180%); }
+    .grayscale {filter: grayscale(100%);}
+    .huerotate {filter: hue-rotate(180deg);}
+    .invert {filter: invert(100%);}
+    .opacity {filter: opacity(50%);}
+    .saturate {filter: saturate(7);}
+    .sepia {filter: sepia(100%);}
+    .shadow {filter: drop-shadow(8px 8px 10px green);}
+
+    /*fade in on hover*/
+    .fadeintext {
+      position: relative;
+      width: 200px;
+    }
+
+    .fadeintext .image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .fadeintext .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: #008CBA;
+    }
+
+    .fadeintext:hover .overlay {
+      opacity: 1;
+    }
+
+    .fadeintext .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+   </style>

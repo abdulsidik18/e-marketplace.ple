@@ -1,0 +1,5 @@
+﻿# Toko Online
+Nama    : Abdul Sidik
+NPM     : 2257201102290
+Jurusan : Manajemen Informatika
+Toko | Online dengan PHP native, MySQLi dan Bootstrap 3
